@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Play the classic Snake game online. Enjoy this fun and addictive game to pass the time.">
+    <meta name="keywords" content="snake game, online snake game, play snake game, classic snake game">
+    <meta name="author" content="AI Game Lab">
+    <title>AI 遊戲生成實驗室 - 貪食蛇</title>
+     <!-- 引入像素風格字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/snake.css">
+</head>
+<body>
+    <h1 id="gameTitle">Snake Game</h1>
+    <img id="startImage" src="./images/snark.webp" alt="Start Image">
+    <div id="gameRules">
+        <h2 id="rulesTitle">Game Rules</h2>
+        <p id="rulesText">Use arrow keys or buttons to control the snake. Red food is worth 10 points, blue food is worth 20 points. Eat as much food as possible, avoid hitting walls or the snake itself.</p>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <button id="startButton">Start Game</button>
+    <div id="controlButtons">
+        <div class="control-row">
+            <button class="control-button" id="upButton">↑</button>
+        </div>
+        <div class="control-row">
+            <button class="control-button" id="leftButton">←</button>
+            <button class="control-button" id="downButton">↓</button>
+            <button class="control-button" id="rightButton">→</button>
+        </div>
+    </div>
+    <div id="gameOverMessage">Game Over</div>
+    <div id="newHighScoreMessage">New High Score!</div>
+    <div id="score">Score: 0</div>
+    <div id="highScore">High Score: 0</div>
+    <script src="js/snake.js"></script>
+</body>
+</html>
